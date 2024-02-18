@@ -1,38 +1,146 @@
+* {
+  box-sizing: border-box;
+}
 .App {
-  text-align: center;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  height: 100vh;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header {
+  height: 50px;
+  width: 100vw;
+  display: flex;
+  border: 1px solid black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header-block {
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  padding: 0 20px;
+}
+
+.header-title {
+  font-size: 30px;
+  color: grey;
+}
+
+.header-title-text {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-personal {
+  display: flex;
+  font-size: 15px;
+  align-items: center;
+}
+
+.header-personal p {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.header-personal img {
+  height: 15px;
+  margin: 10px;
+}
+
+.header-arrow {
+  border-right: 1px solid black;
+  max-height: 50px;
+  max-width: 50px;
+}
+
+.header-arrow img {
+  height: 100%;
+  width: 100%;
+}
+
+.header-ampersant {
+  color: orange;
+}
+
+.header-personal-title {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.main {
+  display: flex;
+}
+
+.nav {
+  border: 1px solid black;
+  width: 50px;
+  height: 100vh;
+  background-color: #5f5a5a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  padding-top: 7px;
+}
+
+.nav-icon {
+  /* width: 30px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle; */
+}
+
+.nav-icon img {
+  width: 30px;
+  height: 42px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.nav-text {
+  border: 1px solid black;
+  width: 200px;
+  height: 100vh;
+  background-color: #5f5a5a;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 7px;
+}
+
+.nav-text-item {
+  height: 42px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-text-item p {
+  font-size: 16px;
+  display: inline-block;
+  vertical-align: middle;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.nav-text-item-orange p {
+  color: orange;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.nav-text-item-change {
+  border-top: 0.5px solid white;
+}
+
+.nav-text-item-change p {
+  color: orange;
+}
+
+.footer {
+  /* height: 50px;
+  border: 1px solid black; */
 }
